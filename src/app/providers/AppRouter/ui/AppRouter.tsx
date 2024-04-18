@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { useRoutes } from "react-router-dom"
+import {routes} from "@/shared/config/routeConfig/routeConfig";
 
 export const AppRouter: FC = () => {
-  const routes = useRoutes()
-  return <h1></h1>
+  const elements = useRoutes(routes)
+  return elements;
 }

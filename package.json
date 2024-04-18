@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "start": "webpack serve --env MODE=development",
+    "build:dev": "webpack --env MODE=development",
+    "build:prod": "webpack --env MODE=production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nikita Demyanenko<nikitademyanenko000@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "@types/webpack": "^5.28.5",
+    "classnames": "^2.5.1",
     "css-loader": "^7.1.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.9.0",
     "sass": "^1.75.0",
