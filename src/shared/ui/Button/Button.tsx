@@ -7,6 +7,10 @@ export enum ButtonSizes {
     LARGE = 'large'
 }
 
+export enum ButtonThemes {
+  PRIMARY = 'primary'
+}
+
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode,
   size?: ButtonSizes,
@@ -20,7 +24,7 @@ export const Button = memo((props: ButtonProps) => {
           className,
           icon: Icon,
           ...rest
-        } = props;
+  } = props;
   return (
     <button 
       className={classNames(styles.Button, styles[size], className)}

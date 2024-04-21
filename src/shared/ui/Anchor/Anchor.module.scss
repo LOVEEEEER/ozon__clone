@@ -1,0 +1,24 @@
+.Anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+
+  &:hover {
+    color: var(--secondary-primary-color);
+  }
+}
+
+.dark {
+  color: var(--dark-color);
+}
+
+.grey {
+  color: var(--grey-color);
+}
+
+.icon {
+  margin-top: 1px;
+}

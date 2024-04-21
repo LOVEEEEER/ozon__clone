@@ -1,3 +1,6 @@
 .Logo {
   width: 128px;
+  &:hover {
+    cursor: pointer;
+  }
 }
