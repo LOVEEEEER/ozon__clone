@@ -1,0 +1,19 @@
+.Input {
+  padding: 6px 10px;
+  height: 44px;
+  border-radius: 6px;
+  color: rgb(0, 26, 52);
+  font-size: 16px;
+  border: 2px solid rgb(179, 188, 197);
+  caret-color: var(--primary-color);
+  transition: border-color .2s cubic-bezier(.25,.8,.25,1);
+
+  &::placeholder {
+    color: rgb(179, 188, 197);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+  }
+}

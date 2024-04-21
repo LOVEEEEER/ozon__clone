@@ -1,0 +1,29 @@
+.Button {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.icon {
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.medium {
+  padding: 10px 16px;
+}
+
+.large {
+  padding: 24px;
+}

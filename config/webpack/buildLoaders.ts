@@ -4,7 +4,8 @@ import { BuildOptions } from "./types/options";
 export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
   const sassLoader = {
     test: /\.s[ac]ss$/i,
-    use: ["style-loader",
+    use: [
+      "style-loader",
     {
       loader: "css-loader",
       options: {
@@ -16,7 +17,8 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
         },
       },
     },
-    "sass-loader"],
+    "sass-loader"
+  ],
   };
   
   const typescriptLoader = {

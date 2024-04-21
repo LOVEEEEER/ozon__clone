@@ -6,20 +6,25 @@
   "scripts": {
     "start": "webpack serve --env MODE=development",
     "build:dev": "webpack --env MODE=development",
-    "build:prod": "webpack --env MODE=production"
+    "build:prod": "webpack --env MODE=production",
+    "unit": "jest"
   },
   "keywords": [],
   "author": "Nikita Demyanenko<nikitademyanenko000@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "@types/webpack": "^5.28.5",
     "classnames": "^2.5.1",
-    "css-loader": "^7.1.1",
+    "css-loader": "^6.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "mini-css-extract-plugin": "^2.9.0",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.1",
