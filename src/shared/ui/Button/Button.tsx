@@ -1,3 +1,4 @@
+import React from "react"
 import { ButtonHTMLAttributes, FC, memo, ReactNode, SVGProps } from "react";
 import styles from "./Button.module.scss";
 import classNames from "classnames";
@@ -30,9 +31,11 @@ export const Button = memo((props: ButtonProps) => {
       className={classNames(styles.Button, styles[size], className)}
       {...rest}
     >
+      {Icon && (
       <div className={styles.icon}>
-        {Icon && <Icon width={24} height={24} fill="#FFFFFF" />}
-      </div>
+        <Icon width={24} height={24} fill="#FFFFFF" />
+      </div>)
+    }
       {children}
     </button>
   )

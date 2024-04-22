@@ -12,7 +12,7 @@ export interface BuildPaths {
   src: string
 }
 
-type BuildMode = "production" | "development"
+type BuildMode = "production" | "development";
 
 export interface BuildEnv {
   MODE: BuildMode,
