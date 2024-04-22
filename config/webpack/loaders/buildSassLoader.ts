@@ -1,5 +1,3 @@
-import { BuildOptions } from "../types/options";
-
 export function buildSassLoader(isDev: boolean) {
   return {
     test: /\.s[ac]ss$/i,

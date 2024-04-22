@@ -15,39 +15,41 @@ export const Navbar = memo(() => {
   return (
     <nav className={styles.Navbar}>
       <NavbarHeader />
-      <Logo />
-      <Button icon={CatalogIcon}>
-        Каталог
-      </Button>
-      <Input className={styles.search} />
-      <Anchor
-        to="/"
-        theme={AnchorThemes.DARK}
-        icon={SmileIcon}
-      >
-        Войти
-      </Anchor>
-      <Anchor
-        to="/"
-        theme={AnchorThemes.DARK}
-        icon={OrdersIcon}
-      >
-        Заказы
-      </Anchor>
-      <Anchor
-        to="/"
-        theme={AnchorThemes.DARK}
-        icon={FavoritesIcon}
-      >
-        Избранное
-      </Anchor>
-      <Anchor
-        to="/"
-        theme={AnchorThemes.DARK}
-        icon={BasketIcon}
-      >
-        Корзина
-      </Anchor>
+      <div className={styles.NavbarMain}>
+        <Logo />
+        <Button icon={CatalogIcon}>
+          Каталог
+        </Button>
+        <Input className={styles.search} />
+        <Anchor
+          to="/"
+          theme={AnchorThemes.DARK}
+          icon={SmileIcon}
+        >
+          Войти
+        </Anchor>
+        <Anchor
+          to="/"
+          theme={AnchorThemes.DARK}
+          icon={OrdersIcon}
+        >
+          Заказы
+        </Anchor>
+        <Anchor
+          to="/"
+          theme={AnchorThemes.DARK}
+          icon={FavoritesIcon}
+        >
+          Избранное
+        </Anchor>
+        <Anchor
+          to="/"
+          theme={AnchorThemes.DARK}
+          icon={BasketIcon}
+        >
+          Корзина
+        </Anchor>
+      </div>
     </nav>
   )
 })

@@ -11,7 +11,7 @@ export enum AnchorThemes {
 interface AnchorProps extends LinkProps {
   children?: ReactNode;
   icon?: FC<SVGProps<SVGElement>>,
-  theme?: AnchorThemes
+  theme?: AnchorThemes,
   className?: string,
 }
 
