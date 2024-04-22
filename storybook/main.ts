@@ -22,6 +22,15 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  swc: () => ({
+    jsc: {
+      transform: {
+        react: {
+          runtime: 'automatic'
+        }
+      }
+    }
+  }),
   webpackFinal: (config: Configuration) => {
     const isDev = true
     config.module!.rules = config.module?.rules?.filter((item: any) => item.type !== "asset/resource");
