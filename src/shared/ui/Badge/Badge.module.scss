@@ -2,6 +2,7 @@
   display: inline-block;
   padding: 1px 6px;
   font-weight: 500;
+  font-size: 14px;
   background-color: rgba(0,48,120,.039);
   transition: var(--transition);
 }
@@ -9,12 +10,11 @@
 .grey {
   color: var(--grey-color);
   &:hover {
-    background-color: rgba(0,26,52,.12);
+    cursor: default;
   }
-}
-
-.clickable {
-  &:hover {
-    cursor: pointer;
+  .clickable {
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

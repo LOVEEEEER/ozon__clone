@@ -12,15 +12,24 @@ interface AnchorProps extends LinkProps {
   children?: ReactNode;
   icon?: FC<SVGProps<SVGElement>>,
   theme?: AnchorThemes,
+  direction?: "row" | "column",
   className?: string,
 }
 
 export const Anchor = memo((props: AnchorProps) => {
-  const { children, to, icon: Icon, theme = AnchorThemes.GREY, ...rest } = props;
+  const { 
+    children,
+    to,
+    icon: Icon,
+    theme = AnchorThemes.GREY,
+    direction = "column",
+    className,
+    ...rest
+   } = props;
 
   return (
     <Link 
-      className={classNames(styles.Anchor, styles[theme])}
+      className={classNames(styles.Anchor, styles[theme], styles[direction], className)}
       to={to}
       {...rest}
     >

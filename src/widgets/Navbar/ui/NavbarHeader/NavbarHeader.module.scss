@@ -1,6 +1,24 @@
 .NavbarHeader {
   display: flex;
   justify-content: space-between;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 12px;
+}
+
+.links {
+  display: flex;
+}
+
+.marked {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  background-color: rgba(0,150,255,.078);
+}
+
+.link {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
 }

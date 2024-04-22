@@ -10,6 +10,7 @@ import OrdersIcon from "@/shared/assets/icons/navbar/orders.svg";
 import FavoritesIcon from "@/shared/assets/icons/navbar/favorites.svg";
 import BasketIcon from "@/shared/assets/icons/navbar/basket.svg";
 import { NavbarHeader } from "./NavbarHeader/NavbarHeader";
+import { Searchbar } from "@/features/Search";
 
 export const Navbar = memo(() => {
   return (
@@ -20,7 +21,7 @@ export const Navbar = memo(() => {
         <Button icon={CatalogIcon}>
           Каталог
         </Button>
-        <Input className={styles.search} />
+        <Searchbar className={styles.search} />
         <Anchor
           to="/"
           theme={AnchorThemes.DARK}

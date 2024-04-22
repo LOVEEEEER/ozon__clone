@@ -7,12 +7,13 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = memo((props: InputProps) => {
-  const {className, ...rest} = props;
+  const {className, type, placeholder, onChange,  ...rest} = props;
   return (
     <input
       className={classNames(styles.Input, className)}
-      type="text"
-      placeholder="Электронная почта"
+      type={type}
+      placeholder={placeholder}
+      onChange={onChange}
       {...rest}
     />
   )
