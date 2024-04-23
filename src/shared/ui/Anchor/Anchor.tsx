@@ -1,4 +1,5 @@
-import { FC, memo, ReactNode, SVGProps } from "react";
+import React from "react"
+import { FC, memo, SVGProps } from "react";
 import { Link, LinkProps } from "react-router-dom";
 import styles from "./Anchor.module.scss";
 import classNames from "classnames";
@@ -8,8 +9,8 @@ export enum AnchorThemes {
   GREY = 'grey'
 }
 
-interface AnchorProps extends LinkProps {
-  children?: ReactNode;
+export interface AnchorProps extends LinkProps {
+  children: string;
   beforeTextIcon?: FC<SVGProps<SVGElement>>,
   afterTextIcon?: FC<SVGProps<SVGElement>>,
   theme?: AnchorThemes,

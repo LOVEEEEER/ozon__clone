@@ -6,7 +6,7 @@
   padding-bottom: 12px;
 }
 
-.links {
+.list {
   display: flex;
 }
 
@@ -17,7 +17,7 @@
   background-color: rgba(0,150,255,.078);
 }
 
-.link {
+.item {
   &:not(:last-child) {
     margin-right: 16px;
   }

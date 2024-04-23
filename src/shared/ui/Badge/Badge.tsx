@@ -17,7 +17,7 @@ export const Badge = memo((props: BadgeProps) => {
   const { text, theme = BadgeThemes.GREY, onClick, className } = props;
   const isClickable = Boolean(onClick);
   return (
-    <div className={classNames(styles.Badge, styles[theme], theme, className, {[styles.clickable]: isClickable})} onClick={onClick}>
+    <div className={classNames(styles.Badge, styles[theme], className, {[styles.clickable]: isClickable})} onClick={onClick}>
       {text}
     </div>
   )

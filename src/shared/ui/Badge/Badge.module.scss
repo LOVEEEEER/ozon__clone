@@ -3,18 +3,16 @@
   padding: 1px 6px;
   font-weight: 500;
   font-size: 14px;
-  background-color: rgba(0,48,120,.039);
   transition: var(--transition);
 }
 
 .grey {
   color: var(--grey-color);
+  background-color: rgba(0,48,120,.039);
+}
+
+.clickable {
   &:hover {
-    cursor: default;
-  }
-  .clickable {
-    &:hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
 }

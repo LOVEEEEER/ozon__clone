@@ -1,6 +1,5 @@
 .Anchor {
   display: flex;
-  align-items: center;
   text-decoration: none;
   font-size: 14px;
   transition: var(--transition);
@@ -10,10 +9,12 @@
 }
 
 .row {
+  align-items: center;
   flex-direction: row;
 }
 
 .column {
+  align-items: center;
   flex-direction: column;
 }
 
