@@ -10,7 +10,8 @@ export enum AnchorThemes {
 
 interface AnchorProps extends LinkProps {
   children?: ReactNode;
-  icon?: FC<SVGProps<SVGElement>>,
+  beforeTextIcon?: FC<SVGProps<SVGElement>>,
+  afterTextIcon?: FC<SVGProps<SVGElement>>,
   theme?: AnchorThemes,
   direction?: "row" | "column",
   className?: string,
@@ -20,7 +21,8 @@ export const Anchor = memo((props: AnchorProps) => {
   const { 
     children,
     to,
-    icon: Icon,
+    beforeTextIcon: BeforeTextIcon,
+    afterTextIcon: AfterTextIcon,
     theme = AnchorThemes.GREY,
     direction = "column",
     className,
@@ -33,8 +35,9 @@ export const Anchor = memo((props: AnchorProps) => {
       to={to}
       {...rest}
     >
-      {Icon && <Icon width={24} height={24} className={styles.icon} />}
+      {BeforeTextIcon && <BeforeTextIcon className={styles.icon} width={24} height={24} />}
       {children}
+      {AfterTextIcon && <AfterTextIcon className={styles.icon} width={24} height={24} />}
     </Link>
   )
 })

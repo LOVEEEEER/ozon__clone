@@ -9,7 +9,7 @@
     "build:prod": "webpack --env MODE=production",
     "unit": "jest",
     "storybook": "storybook dev -p 6006 -c ./storybook",
-    "build-storybook": "storybook build -c ./storybook" 
+    "build-storybook": "storybook build -c ./storybook"
   },
   "keywords": [],
   "author": "Nikita Demyanenko<nikitademyanenko000@gmail.com>",

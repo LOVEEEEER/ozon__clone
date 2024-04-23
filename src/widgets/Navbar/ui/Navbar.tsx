@@ -1,8 +1,7 @@
-import {FC, memo} from "react";
+import {memo} from "react";
 import styles from "./Navbar.module.scss";
 import { Logo } from "@/shared/ui/Logo/Logo";
 import { Button } from "@/shared/ui/Button/Button";
-import { Input } from "@/shared/ui/Input/Input";
 import { Anchor, AnchorThemes } from "@/shared/ui/Anchor/Anchor";
 import CatalogIcon from "@/shared/assets/icons/catalog.svg";
 import SmileIcon from "@/shared/assets/icons/navbar/smile.svg";
@@ -11,6 +10,7 @@ import FavoritesIcon from "@/shared/assets/icons/navbar/favorites.svg";
 import BasketIcon from "@/shared/assets/icons/navbar/basket.svg";
 import { NavbarHeader } from "./NavbarHeader/NavbarHeader";
 import { Searchbar } from "@/features/Search";
+import { NavbarFooter } from "./NavbarFooter/NavbarFooter";
 
 export const Navbar = memo(() => {
   return (
@@ -25,32 +25,33 @@ export const Navbar = memo(() => {
         <Anchor
           to="/"
           theme={AnchorThemes.DARK}
-          icon={SmileIcon}
+          beforeTextIcon={SmileIcon}
         >
           Войти
         </Anchor>
         <Anchor
           to="/"
           theme={AnchorThemes.DARK}
-          icon={OrdersIcon}
+          beforeTextIcon={OrdersIcon}
         >
           Заказы
         </Anchor>
         <Anchor
           to="/"
           theme={AnchorThemes.DARK}
-          icon={FavoritesIcon}
+          beforeTextIcon={FavoritesIcon}
         >
           Избранное
         </Anchor>
         <Anchor
           to="/"
           theme={AnchorThemes.DARK}
-          icon={BasketIcon}
+          beforeTextIcon={BasketIcon}
         >
           Корзина
         </Anchor>
       </div>
+      <NavbarFooter />
     </nav>
   )
 })
